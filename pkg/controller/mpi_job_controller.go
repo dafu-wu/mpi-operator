@@ -28,7 +28,7 @@ import (
 	"strconv"
 	"time"
 
-	common "github.com/kubeflow/common/pkg/apis/common/v1"
+	common "github.com/dafu-wu/common/pkg/apis/common/v1"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"golang.org/x/crypto/ssh"

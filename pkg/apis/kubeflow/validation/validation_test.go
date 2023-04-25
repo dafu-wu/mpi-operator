@@ -17,10 +17,10 @@ package validation
 import (
 	"testing"
 
+	common "github.com/dafu-wu/common/pkg/apis/common/v1"
 	kubeflow "github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	common "github.com/kubeflow/common/pkg/apis/common/v1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/validation/field"

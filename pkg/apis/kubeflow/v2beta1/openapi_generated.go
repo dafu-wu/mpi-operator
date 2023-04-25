@@ -28,12 +28,12 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/kubeflow/common/pkg/apis/common/v1.JobCondition":                 schema_pkg_apis_common_v1_JobCondition(ref),
-		"github.com/kubeflow/common/pkg/apis/common/v1.JobStatus":                    schema_pkg_apis_common_v1_JobStatus(ref),
-		"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec":                  schema_pkg_apis_common_v1_ReplicaSpec(ref),
-		"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaStatus":                schema_pkg_apis_common_v1_ReplicaStatus(ref),
-		"github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy":                    schema_pkg_apis_common_v1_RunPolicy(ref),
-		"github.com/kubeflow/common/pkg/apis/common/v1.SchedulingPolicy":             schema_pkg_apis_common_v1_SchedulingPolicy(ref),
+		"github.com/dafu-wu/common/pkg/apis/common/v1.JobCondition":                  schema_pkg_apis_common_v1_JobCondition(ref),
+		"github.com/dafu-wu/common/pkg/apis/common/v1.JobStatus":                     schema_pkg_apis_common_v1_JobStatus(ref),
+		"github.com/dafu-wu/common/pkg/apis/common/v1.ReplicaSpec":                   schema_pkg_apis_common_v1_ReplicaSpec(ref),
+		"github.com/dafu-wu/common/pkg/apis/common/v1.ReplicaStatus":                 schema_pkg_apis_common_v1_ReplicaStatus(ref),
+		"github.com/dafu-wu/common/pkg/apis/common/v1.RunPolicy":                     schema_pkg_apis_common_v1_RunPolicy(ref),
+		"github.com/dafu-wu/common/pkg/apis/common/v1.SchedulingPolicy":              schema_pkg_apis_common_v1_SchedulingPolicy(ref),
 		"github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1.MPIJob":           schema_pkg_apis_kubeflow_v2beta1_MPIJob(ref),
 		"github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1.MPIJobList":       schema_pkg_apis_kubeflow_v2beta1_MPIJobList(ref),
 		"github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1.MPIJobSpec":       schema_pkg_apis_kubeflow_v2beta1_MPIJobSpec(ref),
@@ -117,7 +117,7 @@ func schema_pkg_apis_common_v1_JobStatus(ref common.ReferenceCallback) common.Op
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/kubeflow/common/pkg/apis/common/v1.JobCondition"),
+										Ref:     ref("github.com/dafu-wu/common/pkg/apis/common/v1.JobCondition"),
 									},
 								},
 							},
@@ -131,7 +131,7 @@ func schema_pkg_apis_common_v1_JobStatus(ref common.ReferenceCallback) common.Op
 								Allows: true,
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubeflow/common/pkg/apis/common/v1.ReplicaStatus"),
+										Ref: ref("github.com/dafu-wu/common/pkg/apis/common/v1.ReplicaStatus"),
 									},
 								},
 							},
@@ -160,7 +160,7 @@ func schema_pkg_apis_common_v1_JobStatus(ref common.ReferenceCallback) common.Op
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.JobCondition", "github.com/kubeflow/common/pkg/apis/common/v1.ReplicaStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
+			"github.com/dafu-wu/common/pkg/apis/common/v1.JobCondition", "github.com/dafu-wu/common/pkg/apis/common/v1.ReplicaStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
 	}
 }
 
@@ -287,14 +287,14 @@ func schema_pkg_apis_common_v1_RunPolicy(ref common.ReferenceCallback) common.Op
 					"schedulingPolicy": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SchedulingPolicy defines the policy related to scheduling, e.g. gang-scheduling",
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.SchedulingPolicy"),
+							Ref:         ref("github.com/dafu-wu/common/pkg/apis/common/v1.SchedulingPolicy"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.SchedulingPolicy"},
+			"github.com/dafu-wu/common/pkg/apis/common/v1.SchedulingPolicy"},
 	}
 }
 
@@ -386,14 +386,14 @@ func schema_pkg_apis_kubeflow_v2beta1_MPIJob(ref common.ReferenceCallback) commo
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/kubeflow/common/pkg/apis/common/v1.JobStatus"),
+							Ref:     ref("github.com/dafu-wu/common/pkg/apis/common/v1.JobStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.JobStatus", "github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1.MPIJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/dafu-wu/common/pkg/apis/common/v1.JobStatus", "github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1.MPIJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -473,7 +473,7 @@ func schema_pkg_apis_kubeflow_v2beta1_MPIJobSpec(ref common.ReferenceCallback) c
 								Allows: true,
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec"),
+										Ref: ref("github.com/dafu-wu/common/pkg/apis/common/v1.ReplicaSpec"),
 									},
 								},
 							},
@@ -498,7 +498,7 @@ func schema_pkg_apis_kubeflow_v2beta1_MPIJobSpec(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec", "github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1.RunPolicy"},
+			"github.com/dafu-wu/common/pkg/apis/common/v1.ReplicaSpec", "github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1.RunPolicy"},
 	}
 }
 

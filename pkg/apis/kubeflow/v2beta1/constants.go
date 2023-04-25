@@ -14,7 +14,7 @@
 
 package v2beta1
 
-import common "github.com/kubeflow/common/pkg/apis/common/v1"
+import common "github.com/dafu-wu/common/pkg/apis/common/v1"
 
 const (
 	// EnvKubeflowNamespace is ENV for kubeflow namespace specified by user.

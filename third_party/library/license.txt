@@ -17564,7 +17564,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 --------------------------------------------------------------------------------
-kubeflow/common  Apache License 2.0  https://github.com/kubeflow/common/blob/master/LICENSE
+kubeflow/common  Apache License 2.0  https://github.com/dafu-wu/common/blob/master/LICENSE
 --------------------------------------------------------------------------------
                                  Apache License
                            Version 2.0, January 2004

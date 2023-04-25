@@ -38,7 +38,7 @@
 * Added health check and callbacks around various leader election phases
 * Honor user-specified worker command
 * Exposed main container name as a configurable field
-* Added RunPolicy to MPIJobSpec that reuses [kubeflow/common](https://github.com/kubeflow/common) spec
+* Added RunPolicy to MPIJobSpec that reuses [kubeflow/common](https://github.com/dafu-wu/common) spec
 * Allow to specify the name of the gang scheduler and priority for pod group
 * Added error log when pod spec does not have any containers
 * Switched to use distroless images

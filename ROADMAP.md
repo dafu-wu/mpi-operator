@@ -11,7 +11,7 @@ Related issue: [#12](https://github.com/dafu-wu/mpi-operator/issues/12).
 * Allow more flexible RBAC when `MPIJob`s so existing RBAC resources can be reused. Related issue: [#20](https://github.com/dafu-wu/mpi-operator/issues/20).
 * Support installation of MPI Operator via [Helm](https://github.com/helm/helm). Related issue: [#11](https://github.com/dafu-wu/mpi-operator/issues/11).
 * Support [Go modules](https://blog.golang.org/migrating-to-go-modules).
-* Consider support launching framework-specific services such as [TensorBoard](https://www.tensorflow.org/tensorboard) and [Horovod Timeline](https://github.com/horovod/horovod#horovod-timeline). Since [tf-operator](https://github.com/kubeflow/tf-operator) already supports TensorBoard, we may want to consider moving this to [kubeflow/common](https://github.com/kubeflow/common) so it can be reused. Related issue: [#138](https://github.com/dafu-wu/mpi-operator/issues/138).
+* Consider support launching framework-specific services such as [TensorBoard](https://www.tensorflow.org/tensorboard) and [Horovod Timeline](https://github.com/horovod/horovod#horovod-timeline). Since [tf-operator](https://github.com/kubeflow/tf-operator) already supports TensorBoard, we may want to consider moving this to [kubeflow/common](https://github.com/dafu-wu/common) so it can be reused. Related issue: [#138](https://github.com/dafu-wu/mpi-operator/issues/138).
 
 ## CI/CD
 

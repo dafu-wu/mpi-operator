@@ -15,7 +15,7 @@
 package v2beta1
 
 import (
-	common "github.com/kubeflow/common/pkg/apis/common/v1"
+	common "github.com/dafu-wu/common/pkg/apis/common/v1"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

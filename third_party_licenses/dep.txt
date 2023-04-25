@@ -178,7 +178,7 @@ github.com/kr/logfmt
 github.com/kr/pretty
 github.com/kr/pty
 github.com/kr/text
-github.com/kubeflow/common
+github.com/dafu-wu/common
 github.com/kubernetes-sigs/kube-batch
 github.com/kylelemons/godebug
 github.com/libopenstorage/openstorage

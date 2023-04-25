@@ -164,7 +164,7 @@ kr/fs,https://github.com/kr/fs/blob/main/LICENSE,BSD 3-Clause "New" or "Revised"
 kr/pretty,https://github.com/kr/pretty/blob/main/License,MIT License,https://raw.githubusercontent.com/kr/pretty/main/License
 kr/pty,https://github.com/kr/pty/blob/master/LICENSE,MIT License,https://raw.githubusercontent.com/kr/pty/master/LICENSE
 kr/text,https://github.com/kr/text/blob/main/License,MIT License,https://raw.githubusercontent.com/kr/text/main/License
-kubeflow/common,https://github.com/kubeflow/common/blob/master/LICENSE,Apache License 2.0,https://raw.githubusercontent.com/kubeflow/common/master/LICENSE
+kubeflow/common,https://github.com/dafu-wu/common/blob/master/LICENSE,Apache License 2.0,https://raw.githubusercontent.com/kubeflow/common/master/LICENSE
 kubernetes-sigs/kube-batch,https://github.com/kubernetes-sigs/kube-batch/blob/master/LICENSE,Apache License 2.0,https://raw.githubusercontent.com/kubernetes-sigs/kube-batch/master/LICENSE
 kylelemons/godebug,https://github.com/kylelemons/godebug/blob/master/LICENSE,Apache License 2.0,https://raw.githubusercontent.com/kylelemons/godebug/master/LICENSE
 libopenstorage/openstorage,https://github.com/libopenstorage/openstorage/blob/master/LICENSE,Apache License 2.0,https://raw.githubusercontent.com/libopenstorage/openstorage/master/LICENSE

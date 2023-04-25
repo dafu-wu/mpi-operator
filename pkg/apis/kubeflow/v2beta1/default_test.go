@@ -17,8 +17,8 @@ package v2beta1
 import (
 	"testing"
 
+	common "github.com/dafu-wu/common/pkg/apis/common/v1"
 	"github.com/google/go-cmp/cmp"
-	common "github.com/kubeflow/common/pkg/apis/common/v1"
 )
 
 func TestSetDefaults_MPIJob(t *testing.T) {
