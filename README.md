@@ -1,6 +1,6 @@
 # MPI Operator
 
-[![Build Status](https://github.com/kubeflow/mpi-operator/workflows/build/badge.svg)](https://github.com/kubeflow/mpi-operator/actions?query=event%3Apush+branch%3Amaster)
+[![Build Status](https://github.com/dafu-wu/mpi-operator/workflows/build/badge.svg)](https://github.com/dafu-wu/mpi-operator/actions?query=event%3Apush+branch%3Amaster)
 [![Docker Pulls](https://img.shields.io/docker/pulls/mpioperator/mpi-operator)](https://hub.docker.com/r/mpioperator/mpi-operator)
 
 The MPI Operator makes it easy to run allreduce-style distributed training on Kubernetes. Please check out [this blog post](https://medium.com/kubeflow/introduction-to-kubeflow-mpi-operator-and-industry-adoption-296d5f2e6edc) for an introduction to MPI Operator and its industry adoption.
@@ -43,7 +43,7 @@ mpijobs.kubeflow.org                       4d
 If it is not included, you can add it as follows using [kustomize](https://github.com/kubernetes-sigs/kustomize):
 
 ```bash
-git clone https://github.com/kubeflow/mpi-operator
+git clone https://github.com/dafu-wu/mpi-operator
 cd mpi-operator
 kustomize build manifests/overlays/kubeflow | kubectl apply -f -
 ```
@@ -62,7 +62,7 @@ kubectl kustomize base | kubectl apply -f -
 
 ## Creating an MPI Job
 
-You can create an MPI job by defining an `MPIJob` config file. See [TensorFlow benchmark example](https://github.com/kubeflow/mpi-operator/blob/master/examples/v2beta1/tensorflow-benchmarks.yaml) config file for launching a multi-node TensorFlow benchmark training job. You may change the config file based on your requirements.
+You can create an MPI job by defining an `MPIJob` config file. See [TensorFlow benchmark example](https://github.com/dafu-wu/mpi-operator/blob/master/examples/v2beta1/tensorflow-benchmarks.yaml) config file for launching a multi-node TensorFlow benchmark training job. You may change the config file based on your requirements.
 
 ```
 cat examples/v2beta1/tensorflow-benchmarks/tensorflow-benchmarks.yaml
@@ -237,7 +237,7 @@ For example `kube_pod_info * on(pod,namespace) group_left label_replace(mpi_oper
 We push Docker images of [mpioperator on Dockerhub](https://hub.docker.com/u/mpioperator) for every release.
 You can use the following Dockerfile to build the image yourself:
 
-- [mpi-operator](https://github.com/kubeflow/mpi-operator/blob/master/Dockerfile)
+- [mpi-operator](https://github.com/dafu-wu/mpi-operator/blob/master/Dockerfile)
 
 Alternative, you can build the image using make:
 
@@ -249,4 +249,4 @@ This will produce an image with the tag `registry.example.com/mpi-operator:dev`.
 
 ## Contributing
 
-Learn more in [CONTRIBUTING](https://github.com/kubeflow/mpi-operator/blob/master/CONTRIBUTING.md).
+Learn more in [CONTRIBUTING](https://github.com/dafu-wu/mpi-operator/blob/master/CONTRIBUTING.md).

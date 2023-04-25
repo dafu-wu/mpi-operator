@@ -31,7 +31,7 @@
 * Added support for RH OCP4.1 and RH OCP4.2
 * Added additional installation methods
    * Using kustomize and [kubeflow/manifests](https://github.com/kubeflow/manifests)
-   * Using [Helm Chart](https://github.com/kubeflow/mpi-operator/tree/master/hack/helm/mpi-operator)
+   * Using [Helm Chart](https://github.com/dafu-wu/mpi-operator/tree/master/hack/helm/mpi-operator)
 * Added support for Go Modules and removed vendor directories
 * Added default ephemeral storage for init container
 * Overwrite NVIDIA env vars to avoid using GPUs on launcher
@@ -59,9 +59,9 @@
 
 ### Documentation
 
-* Added the [list of adopters](https://github.com/kubeflow/mpi-operator/blob/master/ADOPTERS.md) 
-* Added [roadmap document](https://github.com/kubeflow/mpi-operator/blob/master/ROADMAP.md)
-* Revamped [contributing guidelines](https://github.com/kubeflow/mpi-operator/blob/master/CONTRIBUTING.md)
+* Added the [list of adopters](https://github.com/dafu-wu/mpi-operator/blob/master/ADOPTERS.md) 
+* Added [roadmap document](https://github.com/dafu-wu/mpi-operator/blob/master/ROADMAP.md)
+* Revamped [contributing guidelines](https://github.com/dafu-wu/mpi-operator/blob/master/CONTRIBUTING.md)
 * Added [MPIJob API reference page](https://www.kubeflow.org/docs/reference/mpijob/) on Kubeflow website
 * Added [a blog post](https://medium.com/kubeflow/introduction-to-kubeflow-mpi-operator-and-industry-adoption-296d5f2e6edc) for an introduction to MPI Operator and its industry adoption
 * Added a CPU-only example

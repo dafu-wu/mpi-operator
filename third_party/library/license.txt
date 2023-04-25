@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-kubeflow/mpi-operator  Apache License 2.0  https://github.com/kubeflow/mpi-operator/blob/master/LICENSE
+kubeflow/mpi-operator  Apache License 2.0  https://github.com/dafu-wu/mpi-operator/blob/master/LICENSE
 --------------------------------------------------------------------------------
 
                                  Apache License

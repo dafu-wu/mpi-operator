@@ -13,7 +13,7 @@
 # limitations under the License.
 
 BIN_DIR=_output/cmd/bin
-REPO_PATH="github.com/kubeflow/mpi-operator"
+REPO_PATH="github.com/dafu-wu/mpi-operator"
 REL_OSARCH="linux/amd64"
 GitSHA=$(shell git rev-parse HEAD)
 Date=$(shell date "+%Y-%m-%d %H:%M:%S")

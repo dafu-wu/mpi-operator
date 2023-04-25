@@ -31,7 +31,7 @@ import (
 	controllerruntime "sigs.k8s.io/controller-runtime"
 	schedclientset "sigs.k8s.io/scheduler-plugins/pkg/generated/clientset/versioned"
 
-	clientset "github.com/kubeflow/mpi-operator/pkg/client/clientset/versioned"
+	clientset "github.com/dafu-wu/mpi-operator/pkg/client/clientset/versioned"
 )
 
 const (

@@ -56,12 +56,12 @@ import (
 	"k8s.io/utils/clock"
 	"k8s.io/utils/pointer"
 
-	kubeflow "github.com/kubeflow/mpi-operator/pkg/apis/kubeflow/v2beta1"
-	"github.com/kubeflow/mpi-operator/pkg/apis/kubeflow/validation"
-	clientset "github.com/kubeflow/mpi-operator/pkg/client/clientset/versioned"
-	"github.com/kubeflow/mpi-operator/pkg/client/clientset/versioned/scheme"
-	informers "github.com/kubeflow/mpi-operator/pkg/client/informers/externalversions/kubeflow/v2beta1"
-	listers "github.com/kubeflow/mpi-operator/pkg/client/listers/kubeflow/v2beta1"
+	kubeflow "github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1"
+	"github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/validation"
+	clientset "github.com/dafu-wu/mpi-operator/pkg/client/clientset/versioned"
+	"github.com/dafu-wu/mpi-operator/pkg/client/clientset/versioned/scheme"
+	informers "github.com/dafu-wu/mpi-operator/pkg/client/informers/externalversions/kubeflow/v2beta1"
+	listers "github.com/dafu-wu/mpi-operator/pkg/client/listers/kubeflow/v2beta1"
 )
 
 const (

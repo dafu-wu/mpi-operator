@@ -32,7 +32,7 @@ The original design of the operator can be found as a
 The latest release includes a v1alpha2 API and controller.
 A v1 is under development. Something to highlight in this new version is the
 replacement of the Job and StatefulSet by plain Pods, with the intent of
-[tracking running Pods](https://github.com/kubeflow/mpi-operator/issues/201#issuecomment-827837831).
+[tracking running Pods](https://github.com/dafu-wu/mpi-operator/issues/201#issuecomment-827837831).
 
 An MPIJob CRD describes the Job. Important fields include:
 - The workers template

@@ -38,11 +38,11 @@ import (
 	volcanov1beta1 "volcano.sh/apis/pkg/apis/scheduling/v1beta1"
 	volcanoclient "volcano.sh/apis/pkg/client/clientset/versioned"
 
-	kubeflow "github.com/kubeflow/mpi-operator/pkg/apis/kubeflow/v2beta1"
-	clientset "github.com/kubeflow/mpi-operator/pkg/client/clientset/versioned"
-	"github.com/kubeflow/mpi-operator/pkg/client/clientset/versioned/scheme"
-	informers "github.com/kubeflow/mpi-operator/pkg/client/informers/externalversions"
-	"github.com/kubeflow/mpi-operator/pkg/controller"
+	kubeflow "github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1"
+	clientset "github.com/dafu-wu/mpi-operator/pkg/client/clientset/versioned"
+	"github.com/dafu-wu/mpi-operator/pkg/client/clientset/versioned/scheme"
+	informers "github.com/dafu-wu/mpi-operator/pkg/client/informers/externalversions"
+	"github.com/dafu-wu/mpi-operator/pkg/controller"
 )
 
 const (

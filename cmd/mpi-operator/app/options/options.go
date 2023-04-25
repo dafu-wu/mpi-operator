@@ -18,7 +18,7 @@ import (
 	"flag"
 	"os"
 
-	"github.com/kubeflow/mpi-operator/pkg/apis/kubeflow/v2beta1"
+	"github.com/dafu-wu/mpi-operator/pkg/apis/kubeflow/v2beta1"
 )
 
 const (

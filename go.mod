@@ -1,10 +1,9 @@
-module github.com/kubeflow/mpi-operator
+module github.com/dafu-wu/mpi-operator
 
 go 1.19
 
 require (
 	github.com/google/go-cmp v0.5.8
-	github.com/kubeflow/common v0.4.6
 	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/gomega v1.20.1
 	github.com/prometheus/client_golang v1.12.2
@@ -21,6 +20,8 @@ require (
 	sigs.k8s.io/scheduler-plugins v0.25.7
 	volcano.sh/apis v1.7.0
 )
+
+require github.com/kubeflow/common v0.4.6
 
 require (
 	github.com/NYTimes/gziphandler v1.1.1 // indirect
